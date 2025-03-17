@@ -17,4 +17,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./Portfolio1  # Ensure this points to your HTML file's location
+        publish_dir: ./  # Ensure this points to your HTML file's location
