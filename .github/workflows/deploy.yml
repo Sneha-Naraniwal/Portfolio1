@@ -6,7 +6,7 @@ on:
       - main  # Change this if your main branch has a different name
 
 jobs:
-  deploy:
+  deploy:  # Fix: Remove the incorrect text
     runs-on: ubuntu-latest
 
     steps:
