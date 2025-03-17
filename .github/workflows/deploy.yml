@@ -6,7 +6,7 @@ on:
       - main  # Change this if your main branch has a different name
 
 jobs:
-  deploy:  # Fix: Remove the incorrect text
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,6 +16,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-              branch: gh-pages  # The branch where the static site will be deployed
-              folder: .  # Path to the folder to deploy (can be 'build' or root)
-              token: ${{ secrets.GITHUB_TOKEN }} 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./  # Ensure this points to your HTML file's location
+        publish_branch: gh-pages  # Optional: Specify the branch for GitHub Pages
