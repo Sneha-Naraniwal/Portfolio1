@@ -16,6 +16,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  
-        publish_branch: gh-pages # Ensure this points to your HTML file's location
+              branch: gh-pages  # The branch where the static site will be deployed
+              folder: .  # Path to the folder to deploy (can be 'build' or root)
+              token: ${{ secrets.GITHUB_TOKEN }} 
