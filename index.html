@@ -1,65 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Naraniwal | Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha Naraniwal - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Sneha Naraniwal</h1>
-        <p>Cloud Security | Full Stack Development | DevOps</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>B.Tech student at University of Petroleum and Energy Studies, specializing in Cloud Security, DevOps, and Full-Stack Development.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Modern Stock Tracking Application</h3>
-            <p>Built using Next.js, React.js, and Tailwind CSS with Yahoo Finance API integration.</p>
-            <a href="https://github.com/Sneha-Naraniwal/Stock-Trading-Platform" target="_blank">View Source Code</a>
+<body class="text-gray-200">
+
+  <!-- Navbar -->
+  <nav class="bg-zinc-900 shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-10">
+        <h1 class="text-2xl font-bold text-white">Sneha Naraniwal</h1>
+        <div class="flex space-x-4">
+          <a href="mailto:snehanaraniwal@gmail.com" class="text-white hover:text-blue-400" title="Email">
+            Email <i class="fas fa-envelope ml-1"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sneha-naraniwal-3a8b7b1a9/" target="_blank" class="text-white hover:text-blue-400" title="LinkedIn">
+            LinkedIn <i class="fab fa-linkedin ml-1"></i>
+          </a>
+          <a href="https://github.com/Sneha-Naraniwal" target="_blank" class="text-white hover:text-blue-400" title="GitHub">
+            GitHub <i class="fab fa-github ml-1"></i>
+          </a>
         </div>
-        <div class="project">
-            <h3>Collaborative Whiteboard Application</h3>
-            <p>Real-time drawing application using React.js and Tailwind CSS.</p>
-            <a href="https://github.com/Sneha-Naraniwal/WhiteBoard" target="_blank">View Source Code</a>
+      </div>
+      <div class="space-x-8 flex items-center">
+        <a href="#about" class="hover:text-blue-400 font-medium">About</a>
+        <a href="#projects" class="hover:text-blue-400 font-medium">Projects</a>
+        <a href="#containers" class="hover:text-blue-400 font-medium">Container Projects</a>
+        <a href="#achievements" class="hover:text-blue-400 font-medium">Achievements</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto p-6 space-y-16">
+
+    <!-- About -->
+    <section id="about" class="pt-16">
+      <h2 class="text-3xl font-semibold mb-4 text-white">About Me</h2>
+      <p class="text-lg text-gray-300 leading-relaxed">
+        I'm Sneha Naraniwal, passionate about cloud computing, DevOps, and AI. With experience in building scalable web apps,
+        deploying containerized solutions, and leveraging AWS for secure infrastructure, I enjoy crafting smart and efficient tech.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="pt-16">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Docker-Powered Application Ecosystem -->
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white">Docker-Powered Application Ecosystem</h3>
+          <p class="text-sm text-gray-400 mt-2 mb-3">AI-powered analytics + containerization + AWS = magic.</p>
+          <a href="https://github.com/Sneha-Naraniwal/Docker/tree/main/DockSpace-main" class="text-blue-400 hover:underline">View on GitHub</a>
         </div>
-        <div class="project">
-            <h3>FAQ Management System</h3>
-            <p>Multilingual FAQ system built using Django with caching and API integration.</p>
-            <a href="https://github.com/Sneha-Naraniwal/Faqs-Management-system" target="_blank">View Source Code</a>
+    
+        <!-- Collaborative Whiteboard Application -->
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white">Collaborative Whiteboard Application</h3>
+          <p class="text-sm text-gray-400 mt-2 mb-3">Real-time collaborative drawing with customizable tools.</p>
+          <a href="https://github.com/Sneha-Naraniwal/Collaborative-Whiteboard-App" class="text-blue-400 hover:underline">View on GitHub</a>
         </div>
+    
+        <!-- FAQ Management System with Multi-Language Support -->
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white">FAQ Management System with Multi-Language Support</h3>
+          <p class="text-sm text-gray-400 mt-2 mb-3">Multilingual support for FAQ systems with caching and rich text formatting.</p>
+          <a href="https://github.com/Sneha-Naraniwal/FAQ-Management-System" class="text-blue-400 hover:underline">View on GitHub</a>
+        </div>
+    
+        <!-- CloudMorph: Adaptive & Secure Web Solution -->
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white">CloudMorph: Adaptive & Secure Web Solution</h3>
+          <p class="text-sm text-gray-400 mt-2 mb-3">Scalable architecture on the cloud with AWS services for security, storage, and automation.</p>
+          <a href="https://github.com/Sneha-Naraniwal/CloudMorph" class="text-blue-400 hover:underline">View on GitHub</a>
+        </div>
+      </div>
     </section>
     
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p>C++, Python, JavaScript, SQL, HTML, CSS, React.js, Next.js, Django, Docker, AWS</p>
-    </section>
+
+    <!-- Container Projects -->
+    <section id="containers" class="pt-16">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Container Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white mb-2">Titanic Survival Prediction</h3>
+          <a href="https://titanic-survival-prediction-hr9tezylhnd9un4m64ozzk.streamlit.app/" class="text-blue-400 hover:underline">Launch App</a>
+        </div>
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white mb-2">Dashboard Analytics</h3>
+          <a href="https://appdashboard-kgzgwg2xpyuwkbrdmrvxde.streamlit.app/" class="text-blue-400 hover:underline">Launch App</a>
+        </div>
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white mb-2">Binary Classification App</h3>
+          <a href="https://binary-classification-web-app-j4vygfuiail3ocdkgccnvo.streamlit.app/" class="text-blue-400 hover:underline">Launch App</a>
+        </div>
+        <div class="bg-zinc-800 p-5 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-white mb-2">Market Basket Analysis</h3>
+          <a href="https://marketbasketanalysisproject-z9sdmpw5ataicgx3ar7hps.streamlit.app/" class="text-blue-400 hover:underline">Launch App</a>
+        </div>
+      </div>
+      <section id="achievements" class="pt-16">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Achievements</h2>
+        <p class="text-gray-400 mb-4"></p>
+        <div class="bg-zinc-800 p-4 rounded-xl shadow text-center max-w-sm mx-auto">
+          <img src="WhatsApp Image 2025-04-22 at 20.14.46_0b8a617d.jpg" alt="Achievements" class="mx-auto rounded-lg object-cover w-full h-auto"/>
+        </div>
+      </section>
+      
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sneha11778789@gmail.com">sneha11778789@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Sneha-Naraniwal" target="_blank">Sneha-Naraniwal</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sneha-naraniwal" target="_blank">Sneha Naraniwal</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Sneha Naraniwal. All rights reserved.</p>
-    </footer>
-    
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-6 mt-10">
+    © 2025 Sneha Naraniwal — Portfolio built with 🖤
+  </footer>
+
 </body>
 </html>
+
